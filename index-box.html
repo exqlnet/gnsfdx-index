@@ -7,7 +7,8 @@
     <style type="text/css">
         /* 主体样式 */
         body{
-            background: #F6F6F8;
+            background: url("images/back1.jpg") no-repeat fixed;
+            background-size: 100% 100%;
         }
         div.outer{
             margin: 0 auto;
@@ -32,7 +33,7 @@
 
         div.main{
         	width: 100%;
-        	height: 855px;
+        	height: 883px;
         }
 
         div.main-content{
@@ -48,14 +49,14 @@
 
         div.express-lane{
             width: 100%;
-            height: 235px;
+            height: 383px;
             background: green;
         }
 
 
         div.friendship-link{
             width: 100%;
-            height: 383px;
+            height: 235px;
             background: yellow;
         }
 
@@ -74,21 +75,15 @@
         }
 
         div.teach{
-            width: 445px;
-            height: 283px;
+            width: 100%;
+            height: 167px;
             background: red;
             float: right;
         }
-        div.cdsx{
-        	float: right;
-        	width: 100%;
-        	height: 84px;
-            background: green;
-        }
 
         div.download{
-            width: 174px;
-            height: 283px;
+            width: 100%;
+            height: 168px;
             background: blueviolet;
             float: right;
         }
@@ -96,6 +91,7 @@
         div.footer{
             width: 100%;
             height: 100px;
+            margin-bottom: 30px;
             text-align: center;
             background: rgb(0,130,223);
         }
@@ -106,7 +102,7 @@
 
         div.nav{width:100%; height:30px;background: rgb(0,130,223);}
 
-
+        p{margin: 0;}
 
 
 
@@ -120,36 +116,36 @@
     <body>
     <div class="outer">
         <div class="header">
+            <p>页头</p>
         </div>
 
         <!--导航栏开始-->
         <div class="nav">
-
+            <p>导航栏</p>
         </div>
         <!--导航栏结束-->
         <div class="main">
         	<div class="banners">
+                <p>横幅</p>
         	</div>
             <div class="main-content">
                 <div class="left">
                     <div class="information">
-
-                    </div>
-                    <div class="cdsx">
+                        <p>信息框</p>
                     </div>
                     <div class="teach">
-
+                        <p>教学动态</p>
                     </div>
                     <div class="download">
-
+                        <p>下载区</p>
                     </div>
                 </div>
             	<div class="right">
             	    <div class="express-lane">
-
+                        <p>快捷通道</p>
             	    </div>
             	    <div class="friendship-link">
-
+                        <p>友情链接</p>
             	    </div>
             	</div>
 
