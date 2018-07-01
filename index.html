@@ -4,356 +4,116 @@
     <title> 赣南师范大学官网 </title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <!--css-->
-    <style type="text/css">
-        /* 主体样式 */
-        html{
-            background: #F6F6F8;
-        }
-        body{
-            margin: 0 auto;
-            width: 1000px;
-            font-family: Microsoft Yahei, SimHei,Serif;
-        }
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
 
-        /* 快速通道的链接样式 */
-        ul.links li a{
-            margin: 0;
-            color: black;
-            font-size: 14px;
-            text-decoration: none;
-        }
-
-        ul.links li a:hover{
-            text-decoration: underline;
-            color: rgb(0,111,216);
-            transition: 0.2s;
-        }
-
-        ul.links{
-            list-style: none;
-
-        }
-
-        ul.links li{
-            float: left;
-            width: 100px;
-        }
-
-        /* 友情链接的链接样式 */
-        ul.links-2 li a{
-            margin: 0;
-            color: black;
-            font-size: 14px;
-            text-decoration: none;
-        }
-
-        ul.links-2 li a:hover{
-            text-decoration: underline;
-            color: rgb(0,111,216);
-            transition: 0.2s;
-        }
-
-        ul.links-2{
-            list-style: none;
-
-        }
-
-        ul.links-2 li{
-            float: left;
-            width: 100%;
-        }
-
-        /* 通知公告的链接样式 */
-        ol.links li a{
-            margin: 0;
-            color: black;
-            font:13px arial;
-            text-decoration: none;
-        }
-        ol.links li a:hover{
-            text-decoration: underline;
-            color: rgb(0,111,216);
-            transition: 0.2s;
-        }
-
-        ol.links{
-        	padding-top: 15px;
-        	padding-bottom: 15px;
-        }
-
-        ol.links li{
-            float: left;
-            width: 100%;
-        }
-
-        div.common_ol_date{
-            float: right;
-            margin-top: 3px;
-        }
-
-        span.common_ol_date{
-            color: #666;
-            font:13px arial;
-        }
-        /* 首页图片的样式 */
-
-        img.banner{
-            width: 100%;
-            height: 100%;
-        }
-
-        /* span样式 */
-        span.div-title{
-            border-left: 8px solid rgb(0,130,223);
-            padding-left: 10px;
-            width: 100px;
-            display: block;
-        }
-
-        div.footer span{
-            font-size: 13px;
-            position: relative;
-            top: 33%;
-        }
-
-        /* div盒模型样式 */
-        div.header{
-        	padding-top: 30px;
-            width: 1000px;
-            height: 99px;
-            background: white;
-        }
-
-        div.banners{
-            width: 100%;
-            height: 265px;
-        }
-
-        div.main{
-        	width: 100%;
-        	height: 855px;
-        }
-        div.left{
-            width: 248px;
-            height: 590px;  
-            float: left;
-        }
-        div.express-lane{
-            width: 100%;
-            height: 215px;
-            background: white;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 15px;
-            box-shadow: 0 1px 3px rgba(26,26,26,.1);
-        }
-
-
-        div.friendship-link{
-            width: 100%;
-            height: 315px;
-            background: white;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 15px;
-            box-shadow: 0 1px 3px rgba(26,26,26,.1);
-        }
-
-
-        div.right{
-            width: 752px;
-            height: 590px;
-            float: right;
-        }
-        div.information{
-            width: 97%;
-            height: 200px;
-            padding: 15px;
-            padding-left: 0;
-            background: white;
-            float: right;
-            margin-top: 15px;
-            box-shadow: 0 1px 3px rgba(26,26,26,.1);
-        }
-
-        div.teach{
-            width: 47%;
-            height: 200px;
-            padding: 15px;
-            padding-left: 0;
-            background: white;
-            float: right;
-            margin-top: 15px;
-            box-shadow: 0 1px 3px rgba(26,26,26,.1);
-        }
-        div.cdsx{
-        	float: right;
-        	width: 744px;
-        	height: 84px;
-        	margin-top: 15px;
-        }
-
-        div.download{
-            width: 47%;
-            height: 200px;
-            padding: 15px;
-            padding-left: 0;
-            background: white;
-            float: right;
-            margin-top: 15px;
-            box-shadow: 0 1px 3px rgba(26,26,26,.1);
-            margin-right: 5px;
-        }
-
-        div.footer{
-            width: 100%;
-            height: 100px;
-            margin: 10px auto 0 auto;
-            text-align: center;
-            background: rgb(0,130,223);
-            color: white;
-        }
-
-
-
-        /* 导航栏样式 */
-        .nav *{margin:0px; padding:0px;}
-
-        .nav{width:100%; height:30px;background: rgb(0,130,223);}
-
-        .nav ul li{list-style-type:none; height:30px; line-height:30px; float:left; color:black; width:110px; text-indent:center; font-size:14px; text-align:center; background:rgb(0,130,223);}
-        .nav ul li:hover{background:rgb(0,111,216);transition: 0.5s;}
-        .nav ul li a{text-decoration:none; color:#fff;}
-
-
-        .nav .hidden-menu{height:0px; overflow:hidden;transition: 0.3s;position: relative;}
-        .nav ul li:hover .hidden-menu{height:90px;}
-
-        /* 其他样式 */
-        div.header img#logo{
-        	width: 364px;
-        	height: 87px;
-        	margin-left: 10px;
-        	margin-top: 5px;
-        }
-        div ol{
-        	margin: 0px;
-        }
-
-        img.cdsx_img{
-        	width: 744px;
-        }
-
-
-
-
-    </style>
     </head>
 
 
     <body>
-    <div class="header">
-        <img id="logo" src="images/logo.png">
-    </div>
+    <div class="outer">
+	    <div class="header">
+	        <img id="logo" src="images/logo.png">
+	    </div>
 
-    <!--导航栏开始-->
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">网站首页</a></li>
-            <li>
-            <a href="#">部门概况</a>
-                <ul class="hidden-menu">
-                    <li><a href="">教务处职能</a></li>
-                    <li><a href="">岗位设计</a></li>
-                    <li><a href="">办事程序</a></li>i
-                </ul>
-            </li>
-            <li><a href="#">通知公告</a></li>
-            <li><a href="#">教学运行</a></li>
-            <li><a href="#">实践教学</a></li>
-            <li><a href="#">课程建设</a></li>
-            <li><a href="#">质量监控</a></li>
-            <li><a href="#">下载专区</a></li>
-
-        </ul>
-    </div>
-    <!--导航栏结束-->
-    <div class="main">
-    	<div class="banners">
-            <img class="banner" src="images/banner.jpg">
-    	</div>
-    	<div class="left">
-    	    <div class="express-lane">
-	                <span class="div-title">快速通道</span>
-	                <ul class="links">
-	                    <li><a href="">网络英语</a></li>
-	                    <li><a href="">智慧树网</a></li>
-	                    <li><a href="">教务系统</a></li>
-	                    <li><a href="">学校校历</a></li>
-	                    <li><a href="">学校主页</a></li>
-	                    <li><a href="">作息时间</a></li>
-	                    <li><a href="">超星慕课</a></li>
-	                    <li><a href="">精品教程</a></li>
-	                    <li><a href="">教师教育</a></li>
-	                    <li><a href="">信息门户</a></li>
+	    <!--导航栏开始-->
+	    <div class="nav">
+	        <ul>
+	            <li><a href="index.html">网站首页</a></li>
+	            <li>
+	            <a href="#">部门概况</a>
+	                <ul class="hidden-menu">
+	                    <li><a href="">教务处职能</a></li>
+	                    <li><a href="">岗位设计</a></li>
+	                    <li><a href="">办事程序</a></li>i
 	                </ul>
-    	    </div>
-    	    <div class="friendship-link">
-                <span class="div-title">友情链接</span>
-                <ul class="links-2">
-                    <li><a href="">北京师范大学教务处</a></li>
-                    <li><a href="">江西师范大学教务处</a></li>
-                    <li><a href="">江西教育网</a></li>
-                    <li><a href="">国家教育部</a></li>
-                    <li><a href="">中国大学视频公开课</a></li>
-                </ul>
-    	    </div>
-    	</div>
+	            </li>
+	            <li><a href="#">通知公告</a></li>
+	            <li><a href="#">教学运行</a></li>
+	            <li><a href="#">实践教学</a></li>
+	            <li><a href="#">课程建设</a></li>
+	            <li><a href="#">质量监控</a></li>
+	            <li><a href="download.html">下载专区</a></li>
 
-    	<div class="right">
-    	    <div class="information">
-                <span class="div-title">通知通告</span>
-                <ol class="links">
-                        <li><a href="page.html">关于做好2018届本科生毕业前补考工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
-                        <li><a href="">关于公布2017级普通本科生一般类型转专业计划的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
-                        <li><a href="">2017-2018学年第2学期校公选课开课通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
-                        <li><a href="">关于2017—2018学年第2学期校公选课选课的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
-                        <li><a href="">关于做好2017-2018学年第二学期部分课程选课工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2017-12-08</span></div></li>
-                        <li><a href="">关于做好2017年下半年全国大学英语四六级考试工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2017-11-16</span></div></li>
-                        <li><a href="">2017-2018学年第一学期校公选课开课通知</a><div class="common_ol_date"><span class="common_ol_date">2017-09-28</span></div></li>
-                </ol>
-    	    </div>
-    	    <div class="cdsx">
-                <img src="images/cdsx.jpg" class="cdsx_img">
-    	    </div>
-    	    <div class="teach">
-                <span class="div-title">教学动态</span>
-                <ol class="links">
-                    <li><a href="">我校学子夺得第十四届亚洲越野跑锦标赛...</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
-                    <li><a href="">我校普通话培训测试站接受标准化建设达...</a><div class="common_ol_date"><span class="common_ol_date">2017-12-25</span></div></li>
-                    <li><a href="">我校勇夺2017年江西省体育教师教学技能...</a><div class="common_ol_date"><span class="common_ol_date">2017-11-29</span></div></li>
-                    <li><a href="">学校召开本科教学审核评估预评估总结与...</a><div class="common_ol_date"><span class="common_ol_date">2017-10-12</span></div></li>
-                    <li><a href="">校领导看望慰问我校音体美支教学生</a><div class="common_ol_date"><span class="common_ol_date">2017-10-10</span></div></li>
-                    <li><a href="">学校本科教学工作审核评估预评估圆满结...</a><div class="common_ol_date"><span class="common_ol_date">2017-10-10</span></div></li>
-                </ol>
-    	    </div>
-    	    <div class="download">
-                <span class="div-title">下载专区</span>
-                <ol class="links">
-                    <li><a href="">在籍学生证明（模板）</a><div class="common_ol_date"><span class="common_ol_date">2018-05-15</span></div></li>
-                    <li><a href="">赣南师范大学学生自主实习联系函</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
-                    <li><a href="">赣南师范大学关于学生自主实习致家长的...</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
-                    <li><a href="">赣南师范大学学生校外实践教学安全承诺...</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
-                    <li><a href="">赣南师范大学校外实践教学审批表</a><div class="common_ol_date"><span class="common_ol_date">2017-03-29</span></div></li>
-                    <li><a href="">赣南师范大学学生学籍异动处理表</a><div class="common_ol_date"><span class="common_ol_date">2017-02-22</span></div></li>
-                </ol>
-    	    </div>
-    	</div>
-    </div>
-    <div class="footer">
-    	<span><a href="#"></a></span><span><a href="#">关于我们</a></span><br>
-    	<span>学校地址：江西省赣州市蓉江新区师院南路  邮编：341000 </span><br>
-        <span>Copyright(C)2018 赣南师范大学教务处 All Rights Reserved.</span>
+	        </ul>
+	    </div>
+	    <!--导航栏结束-->
+	    <div class="main">
+	    	<div class="banners">
+	            <img class="banner" src="images/banner.jpg">
+	    	</div>
+	    	<div class="left">
+	    	    <div class="express-lane">
+		                <span class="div-title">快速通道</span>
+		                <ul class="links">
+		                    <li><a href="">网络英语</a></li>
+		                    <li><a href="">智慧树网</a></li>
+		                    <li><a href="">教务系统</a></li>
+		                    <li><a href="">学校校历</a></li>
+		                    <li><a href="">学校主页</a></li>
+		                    <li><a href="">作息时间</a></li>
+		                    <li><a href="">超星慕课</a></li>
+		                    <li><a href="">精品教程</a></li>
+		                    <li><a href="">教师教育</a></li>
+		                    <li><a href="">信息门户</a></li>
+		                </ul>
+	    	    </div>
+	    	    <div class="friendship-link">
+	                <span class="div-title">友情链接</span>
+	                <ul class="links-2">
+	                    <li><a href="">北京师范大学教务处</a></li>
+	                    <li><a href="">江西师范大学教务处</a></li>
+	                    <li><a href="">江西教育网</a></li>
+	                    <li><a href="">国家教育部</a></li>
+	                    <li><a href="">中国大学视频公开课</a></li>
+	                </ul>
+	    	    </div>
+	    	</div>
+
+	    	<div class="right">
+	    	    <div class="information">
+	                <span class="div-title">通知通告</span>
+	                <ol class="links">
+	                        <li><a href="information-1.html">关于做好2018届本科生毕业前补考工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
+	                        <li><a href="">关于公布2017级普通本科生一般类型转专业计划的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
+	                        <li><a href="">2017-2018学年第2学期校公选课开课通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
+	                        <li><a href="">关于2017—2018学年第2学期校公选课选课的通知</a><div class="common_ol_date"><span class="common_ol_date">2018-04-04</span></div></li>
+	                        <li><a href="">关于做好2017-2018学年第二学期部分课程选课工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2017-12-08</span></div></li>
+	                        <li><a href="">关于做好2017年下半年全国大学英语四六级考试工作的通知</a><div class="common_ol_date"><span class="common_ol_date">2017-11-16</span></div></li>
+	                        <li><a href="">2017-2018学年第一学期校公选课开课通知</a><div class="common_ol_date"><span class="common_ol_date">2017-09-28</span></div></li>
+	                </ol>
+	    	    </div>
+	    	    <div class="cdsx">
+	                <img src="images/cdsx.jpg" class="cdsx_img">
+	    	    </div>
+	    	    <div class="teach">
+	                <span class="div-title">教学动态</span>
+	                <ol class="links">
+	                    <li><a href="teach-1.html">我校学子夺得第十四届亚洲越野跑锦标赛...</a><div class="common_ol_date"><span class="common_ol_date">2018-03-20</span></div></li>
+	                    <li><a href="">我校普通话培训测试站接受标准化建设达...</a><div class="common_ol_date"><span class="common_ol_date">2017-12-25</span></div></li>
+	                    <li><a href="">我校勇夺2017年江西省体育教师教学技能...</a><div class="common_ol_date"><span class="common_ol_date">2017-11-29</span></div></li>
+	                    <li><a href="">学校召开本科教学审核评估预评估总结与...</a><div class="common_ol_date"><span class="common_ol_date">2017-10-12</span></div></li>
+	                    <li><a href="">校领导看望慰问我校音体美支教学生</a><div class="common_ol_date"><span class="common_ol_date">2017-10-10</span></div></li>
+	                    <li><a href="">学校本科教学工作审核评估预评估圆满结...</a><div class="common_ol_date"><span class="common_ol_date">2017-10-10</span></div></li>
+	                </ol>
+	    	    </div>
+	    	    <div class="download">
+	                <span class="div-title">下载专区</span>
+	                <ol class="links">
+	                    <li><a href="download-1.html">在籍学生证明（模板）</a><div class="common_ol_date"><span class="common_ol_date">2018-05-15</span></div></li>
+	                    <li><a href="">赣南师范大学学生自主实习联系函</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
+	                    <li><a href="">赣南师范大学关于学生自主实习致家长的...</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
+	                    <li><a href="">赣南师范大学学生校外实践教学安全承诺...</a><div class="common_ol_date"><span class="common_ol_date">2017-06-12</span></div></li>
+	                    <li><a href="">赣南师范大学校外实践教学审批表</a><div class="common_ol_date"><span class="common_ol_date">2017-03-29</span></div></li>
+	                    <li><a href="">赣南师范大学学生学籍异动处理表</a><div class="common_ol_date"><span class="common_ol_date">2017-02-22</span></div></li>
+	                </ol>
+	    	    </div>
+	    	</div>
+	    </div>
+	    <div class="footer">
+	    	<span><a href="#"></a></span><span><a href="#">关于我们</a></span><br>
+	    	<span>学校地址：江西省赣州市蓉江新区师院南路  邮编：341000 </span><br>
+	        <span>Copyright(C)2018 赣南师范大学教务处 All Rights Reserved.</span>
+	    </div>
     </div>
     </body>
 </html>

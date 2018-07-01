@@ -1,0 +1,94 @@
+        div.teach-main{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        div.teach-main img{
+            width: 560px;
+            height: 366px;
+        }
+
+        p.pic{
+            text-align: center;
+        }
+
+        p.pic-info{
+            text-align: center;
+            font-family: 楷体;
+        }
+
+        p.head{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        div.teach-body p{
+            text-indent: 2em;
+            font-family: 宋体;
+            font-size: 18px;
+        }
+                div.article p{
+            text-indent: 2em;
+            font-family: 宋体;
+            font-size: 18px;
+        }
+
+        div.article{
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        div.article .title h1{
+            font-family: 黑体;
+            text-align: center;
+        }
+        div.article p.title{
+            text-align: center;
+            font-size: 25px;
+        }
+
+        div.article-head p{
+            text-align: center;
+            font-size: 12px;
+            font-family: 宋体;
+        }
+
+        div.download-main{
+            width: 800px;
+            margin: 0 auto;
+        }
+        div.download-main img.icon{
+            width: 25px;
+            height: 25px;
+        }
+
+        div.download-main button{
+            width: 102px;
+            height: 38px;
+            background: #3388ff;
+            cursor: pointer;
+            padding: 0;
+            border: 0;
+            font-size: 16px;
+            color: white;
+            font-family: arial;
+        }
+
+        div.download-main button:hover{
+            background: #317ef3;
+            transform: 0.2s;
+            box-shadow: 1px 1px 1px #ccc;
+        }
+
+        ul.download-list li span{
+            font-size: 14px;
+            font-family: 宋体;
+        }
+
+        p.btn-download{
+            text-align: center;
+        }
